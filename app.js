@@ -11,6 +11,7 @@ Server.route({
     handler: function (request, reply) {
 
         const result = Hello(decodeURIComponent(request.params.user));
+        console.log(result);
         reply(result);
     }
 });
